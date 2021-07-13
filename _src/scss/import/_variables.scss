@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+//---------- breakpoint ----------
+$breakPointSp: 767px;
+$breakPointPc: 768px;
+
+//---------- fontfamily ----------
+$fontYu: 游ゴシック体, "Yu Gothic", YuGothic;
+
+//---------- palettes ----------
+$palettes: (
+    theme: (
+      blue: #195ca5
+    ),
+    button: (
+      orange: #ff8900,
+      red: #f14841,
+      yellow: #fcd434
+    ),
+    background: (
+      gray: #fafafa,
+      blue: #e8eff6
+    ),
+    text: (
+      blue: #2B374E,
+      blueLink: #0089FC
+    ),
+);
+
+@function palettes($key, $tone: base) {
+    @return map-get(map-get($palettes, $key), $tone);
+}
+
+// 呼び出し方法
+// color: palettes(button, orange);
