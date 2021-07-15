@@ -3,9 +3,8 @@
 @import "./../../import/variables";
 
 .p-footer {
-    .c-example {
-
-    }
+    height: 150px;
+    background-color: #fff;
 
     @include mediaSp {
         .c-example {

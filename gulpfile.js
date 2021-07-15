@@ -26,7 +26,7 @@ const cssPlugin = [
   mqpacker()
 ];
 const fileNameList = [
-  'top',
+  'index',
   'contact'
 ]
 
@@ -39,7 +39,7 @@ const editDirectory = {
   img: './_src/img/'
 }
 const destDirectory = {
-  ejs: './src/html/',
+  ejs: './src/',
   css: './src/css/diff/',
   minifyCss: './src/css/',
   js: './src/js/',
@@ -95,7 +95,7 @@ gulp.task('img.minify', function(done) {
 /*---------- sync ----------*/
 gulp.task('browser.sync', function(done) {
   browserSync.init({
-    server : {baseDir : './src/html/', index : 'top.html'}
+    server : {baseDir : './src/', index : 'index.html'}
   });
   done();
 });

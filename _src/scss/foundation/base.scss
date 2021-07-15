@@ -1,11 +1,18 @@
 @charset "utf-8";
 @import "./../import/mixin";
-
 html {
 	font-family: "Montserrat", "Noto Sans JP", sans-serif;
     font-weight: 500;
+	height: 100%;
+	margin: 0 auto;
+	letter-spacing: 2px;
+	font-size: 10px;
 	body {
 		font-family: "Font Awesome 5 Free","Font Awesome 5 Brands";
+		height: 100%;
+		margin: 0 auto;
+		letter-spacing: 2px;
+		font-size: 10px;
 	}
 	body, form {
 		margin: 0;

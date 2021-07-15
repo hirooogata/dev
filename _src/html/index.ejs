@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<%- include('module/meta'); -%>
+<%- include('module/common'); -%>
+</head>
+<body>
+
+<!-- 幾何学的アニメーション -->
+<div id="parallax"></div>
+
+<!-- コンテンツ -->
+<div class="contents"></div>
+
+<!-- スクロールコンテンツ -->
+<div class="scrollbox">スクロールコンテンツ</div>
+
+<%- include('module/footer'); -%>
+
+<style>
+/*固定する背景*/
+div {
+  box-sizing: border-box;
+  color: #FFF;
+  font-size: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+}
+#parallax {
+  width: 100%;
+  height: 100%;
+  margin:0 auto;
+  background: linear-gradient(to right, blue, pink);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+.contents {
+  position: absolute;
+}
+ 
+/*スクロールするコンテンツ*/
+.scrollbox {
+  background-color: #111;
+  height: 200px;
+}
+</style>
+<script src="./js/top.js"></script>
+<script src="./js/particles.min.js"></script>
+<script src="./js/script.min.js"></script>
+</body>
+</html>
