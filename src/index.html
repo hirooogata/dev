@@ -29,14 +29,36 @@
 <script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script></head>
 <body>
 
-<!-- 幾何学的アニメーション -->
-<div id="parallax"></div>
+<!-- アニメーション -->
+<div id="parallax-bg"></div>
 
 <!-- コンテンツ -->
-<div class="contents"></div>
-
-<!-- スクロールコンテンツ -->
-<div class="scrollbox">スクロールコンテンツ</div>
+<div class="contents">
+  <div class="inner">
+    <img src="./img/youtube_01.png" class="u-pc-mb30 u-sp-mb" alt="特別キャンペーン開催中！">
+    <img src="./img/youtube_02.png" class="u-pc-mb30 u-sp-mb" alt="完全招待制自動売買ソフト">
+    <img src="./img/youtube_03.png" class="u-pc-mb30 u-sp-mb" alt="アルテマ">
+    <img src="./img/youtube_04.png" class="u-pc-mb30 u-sp-mb" alt="ラインでもメールでもご案内できます">
+    <img src="./img/youtube_05.png" class="u-pc-mb30 u-sp-mb" alt="">
+    <img src="./img/youtube_06.png" class="u-pc-mb30 u-sp-mb" alt="">
+    <div class="u-relative">
+      <img src="./img/youtube_07.png" class="u-pc-mb30 u-sp-mb" alt="">
+      <img src="./img/arrow-right.png" class="shake__right" alt="右矢印">
+      <img src="./img/arrow-left.png" class="shake__left" alt="左矢印">
+    </div>
+    <img src="./img/youtube_08.png" class="u-pc-mb30 u-sp-mb" alt="">
+    <div class="u-relative">
+      <img src="./img/wave.png" class="step-1" alt="">
+      <img src="./img/youtube_09.png" class="u-pc-mb30 u-sp-mb" alt="" width="100%">
+    </div>
+    <input type="text" name="name" class="u-pc-mb30 u-sp-mb" placeholder="お届け先Emailを入力">
+    <img src="./img/youtube_10.png" class="" alt="">
+    <img src="./img/youtube_11.png" class="u-pc-mb30 u-sp-mb" alt="">
+    <img src="./img/youtube_12.png" class="u-pc-mb30 u-sp-mb" alt="">
+    <img src="./img/youtube_13.png" class="u-pc-mb50 u-sp-mb" alt="">
+    <img src="./img/youtube_14.png" class="u-pc-mb50 u-sp-mb" alt="">
+  </div>
+</div>
 
 <footer class="p-footer">  
 
@@ -44,40 +66,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>lozad().observe();</script><!-- 画像遅延読み込み -->
-<style>
-/*固定する背景*/
-div {
-  box-sizing: border-box;
-  color: #FFF;
-  font-size: 5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 5%;
-}
-#parallax {
-  width: 100%;
-  height: 100%;
-  margin:0 auto;
-  background: linear-gradient(to right, blue, pink);
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: -1;
-}
-.contents {
-  position: absolute;
-}
- 
-/*スクロールするコンテンツ*/
-.scrollbox {
-  background-color: #111;
-  height: 200px;
-}
-</style>
-<script src="./js/top.js"></script>
+<script src="./js/index.js"></script>
 <script src="./js/particles.min.js"></script>
 <script src="./js/script.min.js"></script>
 </body>

@@ -1,4 +1,4 @@
-particlesJS('parallax',{
+particlesJS('parallax-bg',{
   "particles":{
  
 //--シェイプの設定----------
@@ -30,7 +30,7 @@ particlesJS('parallax',{
         "value":"#ffffff" //シェイプの色
       },
       "opacity":{
-        "value":1, //シェイプの透明度
+        "value":0.8, //シェイプの透明度
         "random":false, //シェイプの透明度をランダムにするか否か
         "anim":{
           "enable":false, //シェイプの透明度をアニメーションさせるか否か
@@ -40,11 +40,11 @@ particlesJS('parallax',{
         }
       },
       "size":{
-        "value":5, //シェイプの大きさ
+        "value":2, //シェイプの大きさ
         "random":true, //シェイプの大きさをランダムにするか否か
         "anim":{
           "enable":false, //シェイプの大きさをアニメーションさせるか否か
-          "speed":40, //アニメーションのスピード
+          "speed":100, //アニメーションのスピード
           "size_min":0.1, //大きさの最小値
           "sync":false //全てのシェイプを同時にアニメーションさせるか否か
         }
@@ -55,8 +55,8 @@ particlesJS('parallax',{
       "line_linked":{
         "enable":true, //線を表示するか否か
         "distance":150, //線をつなぐシェイプの間隔
-        "color":"#ffffff", //線の色
-        "opacity":0.4, //線の透明度
+        "color":"#fff", //線の色
+        "opacity":0.7, //線の透明度
         "width":1 //線の太さ
       },
 //--------------------

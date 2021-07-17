@@ -5,9 +5,30 @@
 	.u-sp {
 		display: none !important;
 	}
+	@for $i from 1 through 10 {
+		.u-pc-mt#{$i*5} {
+			margin-top: #{$i*5}px;
+		}
+		.u-pc-mr#{$i*5} {
+			margin-right: #{$i*5}px;
+		}
+		.u-pc-mb#{$i*5} {
+			margin-bottom: #{$i*5}px;
+		}
+		.u-pc-ml#{$i*5} {
+			margin-left: #{$i*5}px;
+		}
+	}
 }
 @media screen and (max-width: 767px){
 	.u-pc {
 		display: none !important;
 	}
+	.u-sp-mb {
+		margin-bottom: 4%;
+	}
 }
+.u-relative {
+	position: relative;
+}
+
