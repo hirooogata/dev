@@ -1,0 +1,26 @@
+@charset "utf-8";
+@import "./../../import/mixin";
+@import "./../../import/variables";
+
+.c-mail-address {
+    width: 88%;
+    padding: 18px;
+    border-radius: 8px;
+    border: none;
+    text-align: center;
+    font-size: 28px;
+    line-height: 1;
+    border-radius: 8px;
+    box-shadow: 0 5px 12px 0 rgba(0,222,255,0.35)inset;
+
+    &::placeholder{
+        color: #00e4ff;
+        font-weight: bold;
+    }
+
+    @include mediaSp {
+        width: 82%;
+        padding: 3%;
+        font-size: 4vw;
+    }
+}

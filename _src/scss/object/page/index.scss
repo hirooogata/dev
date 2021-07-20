@@ -4,7 +4,7 @@
 
 .inner {
   width: 94%;
-  max-width: 880px;
+  max-width: 840px;
   margin: 30px auto;
   text-align: center;
 }
@@ -30,8 +30,7 @@
 	position: absolute;
 	z-index: -1;
 	animation: wave 1.5s infinite;
-
-  top: -0.2%;
+  top: 0%;
   left: 4.3%;
   width: 18%;
 }
@@ -40,14 +39,14 @@
   0% {
     width: 18%;
     opacity: 1;
-    top: -0.2%;
+    top: 0%;
     left: 4.3%;
     width: 18%;
   }
   100% {
     width: 28%;
     opacity: 0;
-    top: -18%;
-    left: -0.3%;
+    top: -16%;
+    left: -1%;
   }
 }

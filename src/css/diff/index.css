@@ -99,14 +99,82 @@ html a:hover {
   padding: 0 2%;
 }
 
+.c-mail-address {
+  width: 88%;
+  padding: 18px;
+  border: none;
+  border-radius: 8px;
+  border-radius: 8px;
+  box-shadow: 0 5px 12px 0 rgba(0, 222, 255, 0.35) inset;
+  font-size: 28px;
+  line-height: 1;
+  text-align: center;
+}
+
+.c-mail-address::-moz-placeholder {
+  color: #00e4ff;
+  font-weight: bold;
+}
+
+.c-mail-address:-ms-input-placeholder {
+  color: #00e4ff;
+  font-weight: bold;
+}
+
+.c-mail-address::placeholder {
+  color: #00e4ff;
+  font-weight: bold;
+}
+
+.c-send-btn {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.c-send-btn:hover {
+  opacity: 0.8;
+}
+
+.c-shake {
+  cursor: pointer;
+}
+
+.c-shake__right {
+  position: absolute;
+  top: 26%;
+  right: -2%;
+  width: 13%;
+}
+
+.c-shake__left {
+  position: absolute;
+  top: 26%;
+  left: -2%;
+  width: 13%;
+}
+
+.c-shake:hover {
+  opacity: 0.8;
+}
+
 .p-footer {
+  position: relative;
   height: 150px;
   background-color: #fff;
+  font-size: 14px;
+}
+
+.p-footer__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: auto;
+  transform: translateY(-50%) translateX(-50%);
 }
 
 .inner {
   width: 94%;
-  max-width: 880px;
+  max-width: 840px;
   margin: 30px auto;
   text-align: center;
 }
@@ -132,7 +200,7 @@ html a:hover {
   -webkit-animation: wave 1.5s infinite;
   z-index: -1;
   position: absolute;
-  top: -0.2%;
+  top: 0%;
   left: 4.3%;
   width: 18%;
   animation: wave 1.5s infinite;
@@ -140,15 +208,15 @@ html a:hover {
 
 @-webkit-keyframes wave {
   0% {
-    top: -0.2%;
+    top: 0%;
     left: 4.3%;
     width: 18%;
     width: 18%;
     opacity: 1;
   }
   100% {
-    top: -18%;
-    left: -0.3%;
+    top: -16%;
+    left: -1%;
     width: 28%;
     opacity: 0;
   }
@@ -156,15 +224,15 @@ html a:hover {
 
 @keyframes wave {
   0% {
-    top: -0.2%;
+    top: 0%;
     left: 4.3%;
     width: 18%;
     width: 18%;
     opacity: 1;
   }
   100% {
-    top: -18%;
-    left: -0.3%;
+    top: -16%;
+    left: -1%;
     width: 28%;
     opacity: 0;
   }
@@ -172,6 +240,23 @@ html a:hover {
 
 .u-relative {
   position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .c-mail-address {
+    width: 82%;
+    padding: 3%;
+    font-size: 4vw;
+  }
+  .p-footer {
+    height: 20vw;
+    line-height: 1.3;
+  }
+  .p-footer__text {
+    width: 100%;
+    font-size: 1vw;
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -306,5 +391,8 @@ html a:hover {
   }
   .u-sp-mb {
     margin-bottom: 4%;
+  }
+  .u-sp-w60 {
+    width: 60%;
   }
 }
