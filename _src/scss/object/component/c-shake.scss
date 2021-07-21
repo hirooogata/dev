@@ -3,21 +3,32 @@
 @import "./../../import/variables";
 
 .c-shake {
+   height: 28vw;
+   width: 100%;
+   background-size: 100%;
+   background-position: center;
+   z-index: 1000;
+   background-image: url(/img/youtube_07-1.png);
+   background-repeat: no-repeat;
    cursor: pointer;
+   max-height: 300px;
+   margin-bottom: 3vw;
+
    &__right {
       position: absolute;
-      top: 26%;
-      right: -2%;
-      width: 13%;
+      top: 33%;
+      right: 0;
+      width: 10%;
     }
    &__left {
       position: absolute;
-      top: 26%;
-      left: -2%;
-      width: 13%;
+      top: 33%;
+      left: 0;
+      width: 10%;
     }
 
     &:hover {
-      opacity: 0.8;
+      background-image: url(/img/youtube_07-2.png);
+      transition: all 0.2s;
    }
 }

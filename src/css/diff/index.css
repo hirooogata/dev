@@ -128,33 +128,66 @@ html a:hover {
 
 .c-send-btn {
   display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 15vw;
+  max-height: 140px;
+  background-image: url(/img/youtube_10-1.png);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
   cursor: pointer;
 }
 
+.c-send-btn__right {
+  position: absolute;
+  top: 16%;
+  right: 0;
+  width: 10%;
+}
+
+.c-send-btn__left {
+  position: absolute;
+  top: 16%;
+  left: 0;
+  width: 10%;
+}
+
 .c-send-btn:hover {
-  opacity: 0.8;
+  background-image: url(/img/youtube_10-2.png);
+  transition: all 0.2s;
 }
 
 .c-shake {
+  z-index: 1000;
+  width: 100%;
+  height: 28vw;
+  max-height: 300px;
+  margin-bottom: 3vw;
+  background-image: url(/img/youtube_07-1.png);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
   cursor: pointer;
 }
 
 .c-shake__right {
   position: absolute;
-  top: 26%;
-  right: -2%;
-  width: 13%;
+  top: 33%;
+  right: 0;
+  width: 10%;
 }
 
 .c-shake__left {
   position: absolute;
-  top: 26%;
-  left: -2%;
-  width: 13%;
+  top: 33%;
+  left: 0;
+  width: 10%;
 }
 
 .c-shake:hover {
-  opacity: 0.8;
+  background-image: url(/img/youtube_07-2.png);
+  transition: all 0.2s;
 }
 
 .p-footer {
@@ -236,6 +269,13 @@ html a:hover {
     width: 28%;
     opacity: 0;
   }
+}
+
+.animated {
+  -webkit-animation-duration: 3s !important;
+  -webkit-animation-fill-mode: both;
+  animation-duration: 3s;
+  animation-fill-mode: both;
 }
 
 .u-relative {
@@ -390,7 +430,7 @@ html a:hover {
     display: none !important;
   }
   .u-sp-mb {
-    margin-bottom: 4%;
+    margin-bottom: 6%;
   }
   .u-sp-w60 {
     width: 60%;
